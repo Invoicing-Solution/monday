@@ -9,13 +9,16 @@ type Locale string
 const (
 	LocaleEnUS = "en-US" // English (United States)
 	LocaleEnGB = "en-GB" // English (United Kingdom)
+	LocaleEnBE = "en-BE" // English (Belgium)
 	LocaleDaDK = "da-DK" // Danish (Denmark)
 	LocaleNlBE = "nl-BE" // Dutch (Belgium)
 	LocaleNlNL = "nl-NL" // Dutch (Netherlands)
 	LocaleFiFI = "fi-FI" // Finnish (Finland)
 	LocaleFrFR = "fr-FR" // French (France)
 	LocaleFrCA = "fr-CA" // French (Canada)
+	LocaleFrBE = "fr-BE" // French (Belgium)
 	LocaleDeDE = "de-DE" // German (Germany)
+	LocaleDeBE = "de-BE" // German (Belgium)
 	LocaleHuHU = "hu-HU" // Hungarian (Hungary)
 	LocaleItIT = "it-IT" // Italian (Italy)
 	LocaleNnNO = "nn-NO" // Norwegian Nynorsk (Norway)
@@ -103,5 +106,8 @@ func ListLocales() []Locale {
 		LocaleThTH,
 		LocaleUzUZ,
 		LocaleKkKZ,
+		LocaleFrBE,
+		LocaleDeBE,
+		LocaleEnBE,
 	}
 }

@@ -368,6 +368,9 @@ var FullFormatsByLocale = map[Locale]string{
 	LocaleUzUZ: DefaultFormatUzUZFull,
 	LocaleKkKZ: DefaultFormatKkKZFull,
 	LocaleSlSI: DefaultFormatSlSIFull,
+	LocaleDeBE: DefaultFormatNlBEFull,
+	LocaleFrBE: DefaultFormatNlBEFull,
+	LocaleEnBE: DefaultFormatNlBEFull,
 }
 
 // LongFormatsByLocale maps locales to the 'long' date formats for all
@@ -417,6 +420,9 @@ var LongFormatsByLocale = map[Locale]string{
 	LocaleUzUZ: DefaultFormatUzUZLong,
 	LocaleKkKZ: DefaultFormatKkKZLong,
 	LocaleSlSI: DefaultFormatSlSILong,
+	LocaleDeBE: DefaultFormatNlBELong,
+	LocaleFrBE: DefaultFormatNlBELong,
+	LocaleEnBE: DefaultFormatNlBELong,
 }
 
 // MediumFormatsByLocale maps locales to the 'medium' date formats for all
@@ -466,6 +472,9 @@ var MediumFormatsByLocale = map[Locale]string{
 	LocaleUzUZ: DefaultFormatUzUZMedium,
 	LocaleKkKZ: DefaultFormatKkKZMedium,
 	LocaleSlSI: DefaultFormatSlSIMedium,
+	LocaleDeBE: DefaultFormatNlBEMedium,
+	LocaleFrBE: DefaultFormatNlBEMedium,
+	LocaleEnBE: DefaultFormatNlBEMedium,
 }
 
 // ShortFormatsByLocale maps locales to the 'short' date formats for all
@@ -514,6 +523,9 @@ var ShortFormatsByLocale = map[Locale]string{
 	LocaleUzUZ: DefaultFormatUzUZShort,
 	LocaleKkKZ: DefaultFormatKkKZShort,
 	LocaleSlSI: DefaultFormatSlSIShort,
+	LocaleDeBE: DefaultFormatNlBEShort,
+	LocaleFrBE: DefaultFormatNlBEShort,
+	LocaleEnBE: DefaultFormatNlBEShort,
 }
 
 // DateTimeFormatsByLocale maps locales to the 'DateTime' date formats for
@@ -562,6 +574,9 @@ var DateTimeFormatsByLocale = map[Locale]string{
 	LocaleUzUZ: DefaultFormatUzUZDateTime,
 	LocaleKkKZ: DefaultFormatKkKZDateTime,
 	LocaleSlSI: DefaultFormatSlSIDateTime,
+	LocaleDeBE: DefaultFormatNlBEDateTime,
+	LocaleFrBE: DefaultFormatNlBEDateTime,
+	LocaleEnBE: DefaultFormatNlBEDateTime,
 }
 
 // TimeFormatsByLocale maps locales to the 'Time' date formats for
@@ -606,4 +621,7 @@ var TimeFormatsByLocale = map[Locale]string{
 	LocaleUzUZ: DefaultFormatUzUZTime,
 	LocaleKkKZ: DefaultFormatKkKZTime,
 	LocaleSlSI: DefaultFormatSlSITime,
+	LocaleDeBE: DefaultFormatNlBETime,
+	LocaleFrBE: DefaultFormatNlBETime,
+	LocaleEnBE: DefaultFormatNlBETime,
 }
