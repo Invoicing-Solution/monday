@@ -55,6 +55,9 @@ var internalFormatFuncs = map[Locale]internalFormatFunc{
 	LocaleThTH: createCommonFormatFunc(LocaleThTH),
 	LocaleUzUZ: createCommonFormatFuncWithGenitive(LocaleUzUZ),
 	LocaleKkKZ: createCommonFormatFuncWithGenitive(LocaleKkKZ),
+	LocaleEnBE: createCommonFormatFunc(LocaleEnBE),
+	LocaleFrBE: createCommonFormatFunc(LocaleFrBE),
+	LocaleDeBE: createCommonFormatFunc(LocaleDeBE),
 }
 
 // internalParseFunc is a preprocessor for default time.ParseInLocation func
@@ -107,6 +110,9 @@ var internalParseFuncs = map[Locale]internalParseFunc{
 	LocaleThTH: parseFuncThCommon(LocaleThTH),
 	LocaleUzUZ: createCommonParseFuncWithGenitive(LocaleUzUZ),
 	LocaleKkKZ: createCommonParseFuncWithGenitive(LocaleKkKZ),
+	LocaleEnBE: createCommonParseFunc(LocaleEnBE),
+	LocaleFrBE: createCommonParseFunc(LocaleFrBE),
+	LocaleDeBE: createCommonParseFunc(LocaleDeBE),
 }
 
 var knownDaysShort = map[Locale]map[string]string{}           // Mapping for 'Format', days of week, short form
@@ -156,6 +162,24 @@ func fillKnownWords() {
 	fillKnownDaysShort(shortDayNamesNlBE, LocaleNlBE)
 	fillKnownMonthsLong(longMonthNamesNlBE, LocaleNlBE)
 	fillKnownMonthsShort(shortMonthNamesNlBE, LocaleNlBE)
+
+	// En_BE: English (Belgium)
+	fillKnownDaysLong(longDayNamesEnUS, LocaleEnBE)
+	fillKnownDaysShort(shortDayNamesEnUS, LocaleEnBE)
+	fillKnownMonthsLong(longMonthNamesEnUS, LocaleEnBE)
+	fillKnownMonthsShort(shortMonthNamesEnUS, LocaleEnBE)
+
+	// De_BE: German (Belgium)
+	fillKnownDaysLong(longDayNamesDeDE, LocaleDeBE)
+	fillKnownDaysShort(shortDayNamesDeDE, LocaleDeBE)
+	fillKnownMonthsLong(longMonthNamesDeDE, LocaleDeBE)
+	fillKnownMonthsShort(shortMonthNamesDeDE, LocaleDeBE)
+
+	// Fr_BE: French (Belgium)
+	fillKnownDaysLong(longDayNamesFrFR, LocaleFrBE)
+	fillKnownDaysShort(shortDayNamesFrFR, LocaleFrBE)
+	fillKnownMonthsLong(longMonthNamesFrFR, LocaleFrBE)
+	fillKnownMonthsShort(shortMonthNamesFrFR, LocaleFrBE)
 
 	// Nl_NL: Dutch (Netherlands)
 	fillKnownDaysLong(longDayNamesNlBE, LocaleNlNL)
