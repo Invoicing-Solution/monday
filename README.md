@@ -10,7 +10,7 @@ Installing
 ====
 
 ```
-go get github.com/goodsign/monday
+go get github.com/Invoicing-Solution/monday
 ```
 
 Usage
